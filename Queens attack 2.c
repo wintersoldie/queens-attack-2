@@ -13,7 +13,13 @@ int main (){
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 c++;
-                }
+            }
         }
+        if(l<c){
+            l=c;
+        }
+    }
+    printf("%d",n-l);
+    return 0;
 
 }
